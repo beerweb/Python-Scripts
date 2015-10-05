@@ -1,12 +1,8 @@
 from beerlist import beers
 
-page_contents = '''
-<html>
+# This is a python script that returns a very simply html table of beers from the beerlist.py file
 
-<body>
-'''
-
-page_contents += "<table>"
+page_contents = "<table>"
 
 # Create the first table row, with headers
 page_contents += "<tr>"		# Add a row to the table
@@ -52,9 +48,4 @@ for beer in beers:
 
 page_contents += "</table>"
 
-page_contents += '''
-</body>
-</html>
-'''
-
-print(page_contents)
+return page_contents
